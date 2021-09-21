@@ -50,6 +50,8 @@ This node takes in data from the ```/image_color```, ```/current_pose```, and ``
 
 The ```/current_pose``` topic provides the vehicle's current position, and ```/base_waypoints``` provides a complete list of waypoints the car will be following.
 
+**NOTE**: the model for traffic light detection was pretrained & final model object retained in this repository for use. 
+
 ![my_image2](https://user-images.githubusercontent.com/76077647/134168273-314ae4f9-d636-42a9-bac8-85a88aa18947.JPG)
 
 **Fig 2**: Traffic light detection node
