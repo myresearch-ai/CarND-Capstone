@@ -43,7 +43,7 @@ System Integration
 **Fig 1**: Integrated system
 
 
-ROS Node - (Traffic Light Detection Node)
+ROS Node: Traffic Light Detection Node
 ---
 
 This node takes in data from the ```/image_color```, ```/current_pose```, and ```/base_waypoints``` topics and publishes the locations to stop for red traffic lights to the ```/traffic_waypoint``` topic.
@@ -55,7 +55,7 @@ The ```/current_pose``` topic provides the vehicle's current position, and ```/b
 **Fig 2**: Traffic light detection node
 
 
-ROS Node - (Waypoint Updater Node)
+ROS Node: Waypoint Updater Node
 ---
 
 The purpose of this node is to update the target velocity property of each waypoint based on traffic light and obstacle detection data. This node will subscribe to the ```/base_waypoints```, ```/current_pose```, ```/obstacle_waypoint```, and ```/traffic_waypoint``` topics, and publish a list of waypoints ahead of the car with target velocities to the ```/final_waypoints``` topic.
@@ -65,7 +65,7 @@ The purpose of this node is to update the target velocity property of each waypo
 **Fig 2**: Waypoint updater node
 
 
-ROS Node - (DBW Node)
+ROS Node: DBW Node
 ---
 
 Carla is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, and steering have electronic control. The dbw_node subscribes to the ```/current_velocity``` topic along with the ```/twist_cmd``` topic to receive target linear and angular velocities. Additionally, this node will subscribe to ```/vehicle/dbw_enabled```, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the ```/vehicle/throttle_cmd```, ```/vehicle/brake_cmd```, and ```/vehicle/steering_cmd``` topics.
