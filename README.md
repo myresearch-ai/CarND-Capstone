@@ -50,7 +50,7 @@ This node takes in data from the ```/image_color```, ```/current_pose```, and ``
 
 The ```/current_pose``` topic provides the vehicle's current position, and ```/base_waypoints``` provides a complete list of waypoints the car will be following.
 
-**NOTE**: Please download the pretrained traffic light model along with all model artifacts from [my google drive](https://drive.google.com/drive/folders/1T7psb-20oYDoodONcD2_9buqpVlw5dW8?usp=sharing) & save it inside the **model** subdirectory. 
+**NOTE**: Please download the pretrained traffic light model along with all model artifacts from [my google drive](https://drive.google.com/drive/folders/1T7psb-20oYDoodONcD2_9buqpVlw5dW8?usp=sharing) & save it inside the **model** subdirectory under the **light_classification** subdirectory.
 
 ![my_image2](https://user-images.githubusercontent.com/76077647/134168273-314ae4f9-d636-42a9-bac8-85a88aa18947.JPG)
 
